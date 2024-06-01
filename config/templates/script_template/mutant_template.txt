@@ -1,0 +1,32 @@
+task:
+Hello, you are a hardware engineering assistant. You will be given a description of an RTL circuit and its corresponding correct RTL code in verilog.
+Making a very small change on it so it will has a little difference with the original RTL circuit. In this way we will get a mutant RTL.
+your task is to generate {$n$} different mutant RTLs. You should evenly choose the positions where the changes are added. you should try different modification types but modification should be minor.
+the module header is unchangeable.
+
+
+tips:
+please only reply me the mutant RTL circuit in verilog
+please make an annotation where you changed
+you have enough tokens to response
+
+
+reply format:
+//// mutant 1 ////
+(first mutant verilog code)
+
+//// mutant 2 ////
+(second mutant verilog code)
+
+...
+
+//// mutant n ////
+(nth mutant verilog code)
+
+
+RTL problem description (this can help you understand the RTL code):
+{$problem description from HDLBits$}
+
+
+correct RTL code:
+{$RTL code from HDLBits$}

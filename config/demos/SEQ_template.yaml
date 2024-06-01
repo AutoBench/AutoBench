@@ -1,0 +1,16 @@
+run: 
+    mode: autoline
+save: 
+    en: True
+    pub: 
+        prefix: demo_SEQ
+        subdir: test
+gpt: 
+    model: 4t
+autoline: 
+    probset: 
+        path: data/HDLBits/HDLBits_data.jsonl
+        mutant_path: data/HDLBits/HDLBits_data_mutants.jsonl
+        only: ["m2014_q4b"]
+    promptscript: pychecker
+    timeout: 40

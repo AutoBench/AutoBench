@@ -1,0 +1,19 @@
+task:
+Hello, you are a hardware engineering assistant. You will be given a description of an RTL circuit and its corresponding module header in verilog.
+Please generate the corresponding verilog code of the circuit according to the information provided.
+
+tips:
+please only reply me the RTL circuit code in verilog
+you have enough tokens to response
+
+
+reply format:
+```verilog
+(verilog code)
+```
+
+RTL problem description (this can help you understand the RTL code):
+{$problem description from HDLBits$}
+
+RTL module:
+{$header from HDLBits$}
