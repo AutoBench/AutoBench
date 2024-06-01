@@ -58,8 +58,4 @@ I would not recommend modifying other configuration items unless you possess suf
 
 - This version of AutoBench is anonymous version for paper review. After paper being accepted, some information such as author will be released.
 
-<<<<<<< HEAD
 - During its development phase, Autobench was also referred to by the project names "TaistBench" and "ChatBench".
-=======
-- During its development phase, Autobench was also referred to by the project names TaistBench and ChatBench.
->>>>>>> b6e336e67a166e86e5a0d9416187f81443be063f
