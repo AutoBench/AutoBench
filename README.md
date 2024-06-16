@@ -48,7 +48,7 @@ You can change the config file in `config/custom.yaml` to customized your runnin
   
 - `-autoline-probset-only`: this is a list letting programm only run tasks in it. For instance, if I only want to run two tasks: *mux2to1v* and *m2014_q4b*, I should write ['mux2to1v', 'm2014_q4b'] here.
   
-- `-autoline-timeout`: Verilog or Python codes that runs more than this value will be considered as failed because LLM-generated codes may have a finite loop. If your computer is old or heavily occupied, enlarge this value. If too small, some correct codes may be distiguished as failed; if too large, the generated signal file in the finite loop may be too large to stop your computer.
+- `-autoline-timeout`: Verilog or Python codes that runs longer than this value will be considered as failed because LLM-generated codes may have a finite loop. If your computer is old or heavily occupied, enlarge this value. If too small, some correct codes may be distiguished as failed; if too large, the generated signal file in the finite loop may be too large to stop your computer.
   
 - `-autoline-promptscript`: if you want to run AutoBench, then `pychecker`; If you want to run baseline, then `directgen`
 
