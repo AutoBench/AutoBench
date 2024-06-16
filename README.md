@@ -5,7 +5,7 @@ This is the code implementation of paper *AutoBench: Automatic Testbench Generat
 This open-sourced project contains the `code implementation` of *AutoBench*, the `dataset` (see json files in `data/HDLBits`, the dataset is extended from HDLBits data) and the `experimental results` (see the following google drive link) referred in paper Section V Experimental results. Due to the large size, the experimental results are uploaded to google drive: https://drive.google.com/drive/folders/1EhG9Ch4vDzMtOsDvoiHthU0OWsZP1xRh?usp=sharing.
 
 ## What is AutoBench
-AutoBench is the first LLM-based testbench generator for digital circuit design, which requires only the description of the design under test (DUT) to automatically generate comprehensive testbenches. In AutoBench, a hybrid testbench structure and a self-checking system are realized using LLMs. To validate the gen- erated testbenches, we also introduce an automated testbench evaluation framework (Eval0, Eval1, Eval2, Eval2b) to evaluate the quality of generated testbenches from multiple perspectives.
+AutoBench is the first LLM-based testbench generator for digital circuit design, which requires only the description of the design under test (DUT) to automatically generate comprehensive testbenches. In AutoBench, a hybrid testbench structure and a self-checking system are realized using LLMs. To validate the generated testbenches, we also introduce an automated testbench evaluation framework (Eval0, Eval1, Eval2, Eval2b) to evaluate the quality of generated testbenches from multiple perspectives.
 
 ## Setup
 
@@ -13,7 +13,7 @@ AutoBench is the first LLM-based testbench generator for digital circuit design,
 
 - Python 3.8 or newer.
 
-- A version of Icarus Verilog that totally support ***IEEE Std 1800-2012***.
+- The latest version of Icarus Verilog (totally supports ***IEEE Std 1800-2012***).
 
 (We strongly recommend utilizing the latest versions of Python and Icarus Verilog. This is due to the fact that higher version expressions employed by LLMs may result in compatibility issues or bugs when executed in older software versions.)
 
