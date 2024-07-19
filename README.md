@@ -21,7 +21,7 @@ AutoBench is the first **LLM-based testbench generator** for digital circuit des
 
 - Python 3.8 or newer.
 
-- The latest version of Icarus Verilog (totally supports ***IEEE Std 1800-2012***). (don't fogget to modify the iverilog bin location in [iverilog_call.py](iverilog_call.py))
+- The latest version of Icarus Verilog (totally supports ***IEEE Std 1800-2012***). (don't fogget to modify the bin path of iverilog in [iverilog_call.py](iverilog_call.py))
 
 (We strongly recommend utilizing the latest versions of Python and Icarus Verilog. This is due to the fact that higher version expressions employed by LLMs may result in compatibility issues or bugs when executed in older software versions.)
 
