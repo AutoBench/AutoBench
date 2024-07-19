@@ -39,7 +39,7 @@ see [requirements.txt](requirements.txt):
 
 ### LLM API keys
 
-You must insert your OpenAI/Anthropic API key into `config/key_API.json` before running the project.
+You must insert your OpenAI/Anthropic API key into [`config/key_API.json`](config/key_API.json) before running the project.
 
 ### Other Notes
 
