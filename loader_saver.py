@@ -1,6 +1,6 @@
 """
 Description :   This module contains all functions related to loading and saving (except config loading). This file is copied and modified from OplixNet project.
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/11/28 14:03:56
 LastEdited  :   2024/4/17 22:09:35
 """

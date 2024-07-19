@@ -1,6 +1,6 @@
 """
 Description :   analyze the output from autoline mode.
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/12/12 17:35:00
 LastEdited  :   2024/5/24 11:23:12
 """

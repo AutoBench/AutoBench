@@ -1,6 +1,6 @@
 """
 Description :   some tool functions for prompt scripts and their stages
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2024/4/25 13:26:06
 LastEdited  :   2024/5/1 01:27:14
 """

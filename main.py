@@ -1,6 +1,6 @@
 """
 Description :   This is the head file of the project
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/11/28 11:19:59
 LastEdited  :   2024/4/27 13:00:36
 """

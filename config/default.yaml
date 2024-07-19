@@ -1,7 +1,7 @@
 ################# running #################
 run:
     version: '5.0' # last stable version of the code
-    author: "AutoBench's Author - Author's university" # author of the code, anynomous for the double blind review
+    author: "Ruidi Qiu - Technical University of Munich" # author of the code
     time: ~ # preserved, will be set in program
     custom_path: ~ #preserved, will be set in program
     mode: 'chatgpt' # 'chatgpt': like a chatgpt but can load prompt or previous messages. 'autoline': run pipeline of Chatbench automatically. 'iverilog': run iverilog.

@@ -1,6 +1,6 @@
 """
 Description :   this is used in pychecker workflow
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2024/3/31 14:05:50
 LastEdited  :   2024/4/28 11:19:28
 """

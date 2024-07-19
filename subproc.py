@@ -1,6 +1,6 @@
 """
 Description :   This file is related to auto subprocess running
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/12/11 14:06:27
 LastEdited  :   2024/4/28 13:26:18
 """

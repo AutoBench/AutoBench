@@ -1,6 +1,6 @@
 """
 Description :   Automatic pipeline of Chatbench: from HDLBits problem to simulation
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/12/7 15:13:00
 LastEdited  :   2024/5/3 17:17:07
 autoline.py (c) 2023

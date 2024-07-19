@@ -1,6 +1,6 @@
 """
 Description :   This script is used to merge the data from VerilogEval (originally from HDLBits). Run this script in the root directory of the project.
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/12/06 15:50:33
 LastEdited  :   2024/5/21 23:00:10
 """

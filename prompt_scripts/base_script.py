@@ -1,6 +1,6 @@
 """
 Description :   the base script for prompt scripts
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2024/3/22 10:59:34
 LastEdited  :   2024/4/30 20:31:02
 """

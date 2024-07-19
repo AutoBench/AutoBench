@@ -1,6 +1,6 @@
 """
 Description :   The prompt script for pychecker's workflow on CMB circuits. The WF_pychecker_CMB script is only used in preliminary experiments. The final verion of pychecker is in WF_pychecker script, including a CMB/SEQ discriminator.
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2024/3/22 10:40:43
 LastEdited  :   2024/5/3 12:37:01
 """

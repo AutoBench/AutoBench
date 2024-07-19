@@ -1,6 +1,6 @@
 """
 Description :   This file is used to handle json files
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/11/19 21:49:11
 LastEdited  :   
 """

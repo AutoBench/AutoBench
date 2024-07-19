@@ -1,6 +1,6 @@
 """
 Description :   The prompt script for pychecker workflow
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2024/3/22 10:40:43
 LastEdited  :   2024/5/3 22:55:30
 """

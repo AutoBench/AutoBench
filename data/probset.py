@@ -1,6 +1,6 @@
 """
 Description :   the class to manage the problem set data
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2024/3/6 14:01:22
 LastEdited  :   2024/5/21 23:11:39
 """

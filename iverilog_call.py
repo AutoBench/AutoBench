@@ -1,6 +1,6 @@
 """
 Description :   This file is related to iverilog calling. Some codes are modified from autosim.py v0.2 by Rain Bellinsky.
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/12/9 23:22:51
 LastEdited  :   2024/4/29 12:51:22
 """

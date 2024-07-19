@@ -1,6 +1,6 @@
 """
 Description :   some utils for project
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2022/11/08 13:00:00
 LastEdited  :   2024/5/2 13:33:44
 """

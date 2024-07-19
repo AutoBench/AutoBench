@@ -1,6 +1,6 @@
 """
 Description :   This file is related to GPT call, include the function of calling GPT and the function of running GPT in chatgpt mode
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/11/17 15:01:06
 LastEdited  :   2024/4/27 14:46:03
 """

@@ -1,6 +1,6 @@
 """
 Description :   "directgen" script for prompt scripts
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2024/3/30 17:40:38
 LastEdited  :   2024/5/1 17:44:05
 """

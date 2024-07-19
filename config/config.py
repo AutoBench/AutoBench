@@ -1,6 +1,6 @@
 """
 Description :   This is the config module of the project. This file is copied and modified from OplixNet project.
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/11/28 11:20:33
 LastEdited  :   2024/4/27 12:43:34
 """

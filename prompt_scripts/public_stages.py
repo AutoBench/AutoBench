@@ -1,6 +1,6 @@
 """
 Description :   some public stages called by other scripts
-Author      :   AutoBench's Author (Anonymous Email)
+Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2024/3/22 13:02:22
 LastEdited  :   2024/4/28 15:03:45
 """
