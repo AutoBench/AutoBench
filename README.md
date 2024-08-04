@@ -35,7 +35,6 @@ see [requirements.txt](requirements.txt):
 - matplotlib==3.9.1
 - openai==1.35.15
 - PyYAML==6.0.1
-- PyYAML==6.0.1
 - Requests==2.32.3
 - tiktoken==0.7.0
 
