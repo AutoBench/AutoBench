@@ -80,3 +80,7 @@ I would not recommend modifying other configuration items unless you possess suf
 - This version of AutoBench is the first public version after paper acceptation.
 
 - During its development phase, Autobench was also referred to by the project names "TaistBench" and "ChatBench".
+
+## License
+
+This project is licensed under the GNU General Public License (GPL), a free software license that aims to protect user freedoms. Under the GPL, you are free to use, modify, and distribute this software, but you must share any modifications under the same license.
