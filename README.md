@@ -1,6 +1,6 @@
 # AutoBench 1.0
 
-![image](https://zenodo.org/badge/809137959.svg)
+![image](https://zenodo.org/badge/809137959.svg) ![image](https://img.shields.io/github/license/AutoBench/AutoBench.svg) ![image](https://img.shields.io/github/release/AutoBench/AutoBench)
 
 
 This is the code implementation of paper [*AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design*](https://arxiv.org/abs/2407.03891), which has been **accepted** by [*6th ACM/IEEE International Symposium on Machine Learning for CAD*](https://mlcad.org/symposium/). 
