@@ -5,7 +5,7 @@
 
 This is the code implementation of paper [*AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design*](https://arxiv.org/abs/2407.03891), which has been **accepted** by [*6th ACM/IEEE International Symposium on Machine Learning for CAD*](https://mlcad.org/symposium/). 
 
-<img src="figs/artifacts_available_v1.1.svg" width="10%" align=right><img src="figs/artifacts_evaluated_functional_v1.1.svg" width="10%" align=right>
+<img src="figs/artifacts_evaluated_functional_v1.1.svg" width="10%" align=right><img src="figs/artifacts_available_v1.1.svg" width="10%" align=right>
 
 - Updated on 15.Aug.2024: This open source work is honored to be **nominated** for the **Best Artifact Award** 😃. One reviewer successfully reproduced our work and achieved even better results than reported in the paper.
 
