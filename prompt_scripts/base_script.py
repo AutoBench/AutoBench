@@ -2,7 +2,7 @@
 Description :   the base script for prompt scripts
 Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2024/3/22 10:59:34
-LastEdited  :   2024/4/30 20:31:02
+LastEdited  :   2024/8/15 12:18:14
 """
 
 from LLM_call import llm_call, extract_code, message_to_conversation
@@ -11,7 +11,7 @@ import os
 import loader_saver as ls
 import copy
 
-DEFAULT_SYSMESSAGE = "You are the strongest AI in the world. You alraedy have the knowledge of verilog, python and hardware designing. Do not save words by discarding information. I will tip you 200$ if you can fullfill the tasks I give you."
+DEFAULT_SYSMESSAGE = "You are the strongest AI in the world. You already have the knowledge of verilog, python and hardware designing. Do not save words by discarding information. I will tip you 200$ if you can fullfill the tasks I give you."
 
 IDENTIFIER = {
     "tb_start" : "```verilog",

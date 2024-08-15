@@ -12,7 +12,7 @@ save:
     root: ~ # the root saving dir ends with '/'; will be set in program. 
     pub:
         prefix: # the real name of one experiment, fill it in custom_path;
-        dir: 'saves/' # Ended with '/'; if not empty, log/tb/data will share one dir, recommended.
+        dir: 'saves/0812~0818/' # Ended with '/'; if not empty, log/tb/data will share one dir, recommended.
         subdir: ''
 
     log:
@@ -76,3 +76,4 @@ autoline:
     promptscript: ~
     error_interruption: False # if True, the program will stop when error occurs.
     timeout: 60 # timeout for run a python or iverilog code; unit: second.
+    save_compile: True # if True, save the compiling codes (codes in TBeval); if False, not save.

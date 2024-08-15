@@ -2,7 +2,7 @@
 Description :   This file is related to GPT call, include the function of calling GPT and the function of running GPT in chatgpt mode
 Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/11/17 15:01:06
-LastEdited  :   2024/4/27 14:46:03
+LastEdited  :   2024/8/13 21:09:12
 """
 from openai import OpenAI
 from anthropic import Anthropic
@@ -23,11 +23,16 @@ __all__ = ["llm_call", "gpt_call", "claude_call", "run_like_a_chatgpt"]
 PRICING_MODELS = {
     # model: [price_per_1000_prompt_tokens, price_per_1000_completion_tokens]
     # claude
+    "claude-3-5-sonnet-20240620": [0.003, 0.015],
     "claude-3-opus-20240229": [0.015, 0.075],
     "claude-3-sonnet-20240229": [0.003, 0.015],
     "claude-3-haiku-20240307": [0.00025, 0.00125],
     "claude-2.1": [0.008, 0.024],
     "claude-2.0": [0.008, 0.024],
+    # gpt 4o
+    'gpt-4o-2024-08-06' : [0.0025, 0.01],
+    'gpt-4o-2024-05-13' : [0.005, 0.015],
+    'gpt-4o-mini-2024-07-18' : [0.00015, 0.0006],
     # gpt 4 turbo
     'gpt-4-turbo-2024-04-09': [0.01, 0.03],
     'gpt-4-0125-preview': [0.01, 0.03],

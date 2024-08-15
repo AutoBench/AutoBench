@@ -2,7 +2,7 @@
 Description :   Automatic pipeline of Chatbench: from HDLBits problem to simulation
 Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/12/7 15:13:00
-LastEdited  :   2024/5/3 17:17:07
+LastEdited  :   2024/8/15 12:22:49
 autoline.py (c) 2023
 """
 
@@ -155,7 +155,7 @@ def pipeline_one_prob(prob_data:dict, TBgen_prompt_script, config):
                 TBsim = TaskTBsimNew(TBgen, TBgen.TB_code, header, task_dir, task_id, config)
                 TBsim.run()
                 # TB_code = TBgen.TB_code if TBsim.debug_iter_now == 0 else TBsim.TB_code_now
-                TBeval = TaskTBeval(task_id, task_dir, TB_gen=TBsim.TB_code_now, TB_golden=TB_golden, DUT_golden=DUT_golden, DUT_mutant_list=mutant_list, DUT_gptgen_list=gptgen_list, pychecker_en=TBsim.pychecker_en, pychecker_code=TBsim.PY_code_now, config=config)
+                TBeval = TaskTBeval(task_id, task_dir, TB_gen=TBsim.TB_code_now, TB_golden=TB_golden, DUT_golden=DUT_golden, DUT_mutant_list=mutant_list, DUT_gptgen_list=gptgen_list, pychecker_en=TBsim.pychecker_en, pychecker_code=TBsim.PY_code_now, config=config, save_en=config.autoline.save_compile)
                 TBeval.run()
                 incomplete_running = False
             else: # normal running
@@ -166,7 +166,7 @@ def pipeline_one_prob(prob_data:dict, TBgen_prompt_script, config):
                     TBsim = TaskTBsimNew(TBgen, TBgen.TB_code, header, task_dir, task_id, config)
                     TBsim.run()
                     # TB_code = TBgen.TB_code if TBsim.debug_iter_now == 0 else TBsim.TB_code_now
-                    TBeval = TaskTBeval(task_id, task_dir, TB_gen=TBsim.TB_code_now, TB_golden=TB_golden, DUT_golden=DUT_golden, DUT_mutant_list=mutant_list, DUT_gptgen_list=gptgen_list, pychecker_en=TBsim.pychecker_en, pychecker_code=TBsim.PY_code_now, config=config)
+                    TBeval = TaskTBeval(task_id, task_dir, TB_gen=TBsim.TB_code_now, TB_golden=TB_golden, DUT_golden=DUT_golden, DUT_mutant_list=mutant_list, DUT_gptgen_list=gptgen_list, pychecker_en=TBsim.pychecker_en, pychecker_code=TBsim.PY_code_now, config=config, save_en=config.autoline.save_compile)
                     TBeval.run()
                 except Exception as e:
                     incomplete_running = True
@@ -640,7 +640,7 @@ class TaskTBeval():
         - "Eval2_failed_mutant_idxes" : list of int (the index of the failed mutants)
     """
     """main structure: run(), run_Eval1(), run_Eval2()"""
-    def __init__(self, task_id: str, task_dir: str, TB_gen: str, config:object, TB_golden:str=None, DUT_golden:str=None, DUT_mutant_list:list=None, DUT_gptgen_list:list = None, pychecker_en:bool = False, pychecker_code:str = ""):
+    def __init__(self, task_id: str, task_dir: str, TB_gen: str, config:object, TB_golden:str=None, DUT_golden:str=None, DUT_mutant_list:list=None, DUT_gptgen_list:list = None, pychecker_en:bool = False, pychecker_code:str = "", save_en:bool = True):
         self.task_id = task_id
         self.task_dir = task_dir
         self.TB_gen = TB_gen
@@ -650,6 +650,7 @@ class TaskTBeval():
         self.DUT_gptgen_list = DUT_gptgen_list
         self.config = config
         self.pychecker_en = pychecker_en
+        self.save_en = save_en
         self.TB_gen_mode = "TB_gen" if not self.pychecker_en else "Pychecker"
         self.pychecker_code = pychecker_code
         self.working_dir = ""
@@ -690,7 +691,7 @@ class TaskTBeval():
         silent = True
         ### Eval 1: Golden RTL checking
         print_and_save("\n[%s] Eval 1: Golden RTL checking begins" % (self.task_id), self.config)
-        self.Eval1_pass = self.run_testbench(self.Eval1_dir, self.TB_gen, self.DUT_golden, self.TB_gen_mode, self.pychecker_code, raise_when_fail=True)
+        self.Eval1_pass = self.run_testbench(self.Eval1_dir, self.TB_gen, self.DUT_golden, self.TB_gen_mode, self.pychecker_code, raise_when_fail=True, save_en=True)
         print_and_save("[%s] Eval 1: Golden RTL checking %s! (%s)" % (self.task_id, "passed" if self.Eval1_pass else "failed", get_time()), self.config)
         self.Eval1_exist = True
 
@@ -716,11 +717,11 @@ class TaskTBeval():
             GoldenTB_subsubdir = mutant_subdir + "GoldenTB/"
             GenedTB_subsubdir = mutant_subdir + "GeneratedTB/"
             try: #in case the mutant has syntax error
-                TBgolden_pass = self.run_testbench(GoldenTB_subsubdir, self.TB_golden, DUT_mutant, "TB_golden")
+                TBgolden_pass = self.run_testbench(GoldenTB_subsubdir, self.TB_golden, DUT_mutant, "TB_golden", save_en=self.save_en)
             except:
                 TBgolden_pass = False
             try:
-                TBgen_pass = self.run_testbench(GenedTB_subsubdir, self.TB_gen, DUT_mutant, self.TB_gen_mode, self.pychecker_code)
+                TBgen_pass = self.run_testbench(GenedTB_subsubdir, self.TB_gen, DUT_mutant, self.TB_gen_mode, self.pychecker_code, save_en=self.save_en)
             except:
                 TBgen_pass = False
             if not TBgolden_pass and not TBgen_pass:
@@ -740,7 +741,7 @@ class TaskTBeval():
         result = "perfectly passed" if eval_pass else ("finished (%d/%d)" % (len(passed_mutant_idx), len(mutant_results)))
         print_and_save("[%s] %s %s! (%s)" % (self.task_id, print_str, result, get_time()), self.config)
 
-    def run_testbench(self, dir, TB_code, DUT_code, TB_type, pychecker_code = "", raise_when_fail = False):
+    def run_testbench(self, dir, TB_code, DUT_code, TB_type, pychecker_code = "", raise_when_fail = False, save_en = True):
         """
         it has two mode: pychecker mode or verilog testbench mode
         -input:
@@ -775,6 +776,8 @@ class TaskTBeval():
             TC_pass = self.TC_pass_from_TC_out(sim_pass=True, sim_out=py_run_info[1]["out"], TB_type="Pychecker") & iv_run_info[0] & py_run_info[0]
         else:
             TC_pass = self.TC_pass_from_TC_out(sim_pass=True, sim_out=iv_run_info[4]["out"], TB_type=TB_type) & iv_run_info[0]
+        if not save_en:
+            os.system(f"rm -rf {dir}")
         return TC_pass
 
     def clean_wave_vcd(self):
