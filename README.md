@@ -2,7 +2,7 @@
 
 This is the code implementation of paper [*AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design*](https://arxiv.org/abs/2407.03891), which has been **accepted** by [*6th ACM/IEEE International Symposium on Machine Learning for CAD*](https://mlcad.org/symposium/). 
 
-Updated on 15.Aug.2024: This open source work is honored to be **nominated** for the **Best Artifact Award** 😃. One reviewer successfully reproduced our work and achieved even better results than reported in the paper.
+- Updated on 15.Aug.2024: This open source work is honored to be **nominated** for the **Best Artifact Award** 😃. One reviewer successfully reproduced our work and achieved even better results than reported in the paper.
 
 This open-sourced project contains the `code implementation` of *AutoBench*, the `dataset` (see json files in [`data/HDLBits`](data/HDLBits), the dataset is extended from HDLBits data) and the `experimental results` (see the following google drive link) referred in paper Section V Experimental results. Due to the large size, the experimental results are uploaded to [google drive](https://drive.google.com/drive/folders/1EhG9Ch4vDzMtOsDvoiHthU0OWsZP1xRh?usp=sharing).
 
