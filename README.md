@@ -1,6 +1,8 @@
 # AutoBench 1.0
 
 ![image](https://zenodo.org/badge/809137959.svg)
+![image](https://github.com/ml-eda/artifact-evaluation/blob/main/acm_badges/artifacts_available_v1.1.pdf)
+![image](https://github.com/ml-eda/artifact-evaluation/blob/main/acm_badges/artifacts_evaluated_functional_v1.1.pdf)
 
 This is the code implementation of paper [*AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design*](https://arxiv.org/abs/2407.03891), which has been **accepted** by [*6th ACM/IEEE International Symposium on Machine Learning for CAD*](https://mlcad.org/symposium/). 
 
