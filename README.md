@@ -93,3 +93,17 @@ For other configuration items, please see [default.yaml](config/default.yaml). I
 ## License
 
 This project is licensed under the GNU General Public License (GPL), a free software license that aims to protect user freedoms. Under the GPL, you are free to use, modify, and distribute this software, but you must share any modifications under the same license.
+
+## Reference
+
+```
+@misc{qiu2024autobenchautomatictestbenchgeneration,
+      title={AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design}, 
+      author={Ruidi Qiu and Grace Li Zhang and Rolf Drechsler and Ulf Schlichtmann and Bing Li},
+      year={2024},
+      eprint={2407.03891},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2407.03891}, 
+}
+```
