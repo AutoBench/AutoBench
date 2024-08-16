@@ -49,6 +49,10 @@ see [requirements.txt](requirements.txt):
 
 You must insert your OpenAI/Anthropic API key into [`config/key_API.json`](config/key_API.json) before running the project.
 
+### IVerilog Path
+
+You must change `IVERILOG_PATH` and `IVERILOG_VVP_PATH` in [`iverilog_call`](iverilog_call.py) according to the installation path of iverilog on your device.
+
 ### Other Notes
 
 If your CPU is heavily occupied or very inefficient, consider enlarging the value for `timeout` in your config file, otherwise simulation may fail due to too much time spent on simulation and the final performance may decrease.

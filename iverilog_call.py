@@ -2,7 +2,7 @@
 Description :   This file is related to iverilog calling. Some codes are modified from autosim.py v0.2 by Rain Bellinsky.
 Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2023/12/9 23:22:51
-LastEdited  :   2024/4/29 12:51:22
+LastEdited  :   2024/8/16 12:45:37
 """
 
 import os
@@ -15,7 +15,10 @@ if os.name == 'nt':
 else:
     IC = '/'
 
-RUN_DIR = "ipynb_demo/verilog_test/"
+RUN_DIR = "ipynb_demo/verilog_test/" # this is only used when directly run this file
+
+IVERILOG_PATH = "~/bin/bin/iverilog"
+IVERILOG_VVP_PATH = "~/bin/bin/vvp"
 
 def iverilog_call(dir, silent = False, timeout = 120):
     """
@@ -50,14 +53,14 @@ def iverilog_call(dir, silent = False, timeout = 120):
     # vvp_filename = "%s.vvp"%(task_id)
     vvp_filename = "run.vvp"
     # cmd1 = "iverilog -g2012 -o %s %s"%(vvp_filename, vlist_str) # used to be vvp_path
-    cmd1 = "~/bin/bin/iverilog -g2012 -o %s %s"%(vvp_filename, vlist_str) # used to be vvp_path
+    cmd1 = "%s -g2012 -o %s %s"%(IVERILOG_PATH, vvp_filename, vlist_str) # used to be vvp_path
     s_print(cmd1)
     with run_in_dir(dir):
         run1_info = subproc_call(cmd1, timeout) # {"out": out_reg, "err": err_reg, "haserror": error_exist}
     if run1_info["haserror"]:
         s_print("iverilog compiling failed")
         return [False, cmd1, run1_info, None, None, run1_info["err"]]
-    cmd2 = "~/bin/bin/vvp %s"%(vvp_filename) # used to be vvp_path
+    cmd2 = "%s %s"%(IVERILOG_VVP_PATH, vvp_filename) # used to be vvp_path
     s_print(cmd2)
     with run_in_dir(dir):
         run2_info = subproc_call(cmd2, timeout)
