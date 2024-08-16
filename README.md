@@ -78,13 +78,13 @@ You can change the config file in [`config/custom.yaml`](config/custom.yaml) to 
 
 - `-gpt-model`: the LLM model called in work. Now it perfectly supports [OpenAI's conversational LLM models](https://platform.openai.com/docs/models) such as gpt3.5, gpt4, gpt3.5turbo, gpt4turbo, gpt4o. Please use the official model name such as *gpt-4-turbo-2024-04-09* in this option. It also imperfectly support [Claude3 models](https://docs.anthropic.com/en/docs/about-claude/models). But we do not guarantee that the Claude3 model will function flawlessly in our work.
   
-- `-autoline-probset-only`: this is a list letting the program only run tasks in it. For instance, if I only want to run two tasks: *mux2to1v* and *m2014_q4b*, I should write ['mux2to1v', 'm2014_q4b'] here.
+- `-autoline-probset-only`: this is a list letting the program only run certain tasks. For instance, if I only want to run two tasks: *mux2to1v* and *m2014_q4b*, I should write ['mux2to1v', 'm2014_q4b'] here.
   
-- `-autoline-timeout`: Verilog or Python codes that runs longer than this value will be considered as failed because LLM-generated codes may have a finite loop. If your computer is old or heavily occupied, enlarge this value. If too small, some correct codes may be distiguished as failed; if too large, the generated signal file in the finite loop may be too large to stop your computer.
+- `-autoline-timeout`: Verilog or Python codes that runs longer than this value will be considered as failed because LLM-generated codes may have a finite loop. If your computer is old or heavily occupied, enlarge this value. If too small, some correct codes may be distinguished as failed; if too large, the generated signal file in the infinite loop may be too large to stop your computer.
   
 - `-autoline-promptscript`: if you want to run AutoBench, then `pychecker`; If you want to run baseline, then `directgen`.
 
-- `autoline-save_compile`: default - True; If you do not want the compilation files of Eval2 (more than 100 files for one task), set this configuration to False.
+- `autoline-save_compile`: default - True; If you do not want the compilation files of Eval2 (more than 100 files per task), set this configuration to False.
 
 For other configuration items, please see [default.yaml](config/default.yaml). I would not recommend modifying other configuration items unless you possess sufficient understanding of these components.
 
@@ -94,7 +94,7 @@ For other configuration items, please see [default.yaml](config/default.yaml). I
 
 - The circuit_type file in data/HDLBits is only for reference but not used in our work. In AutoBench workflow, the circuit type of each task is discriminated in Stage 0.
 
-- During its development phase, Autobench was also referred to by the project names "TaistBench" and "ChatBench".
+- During its development phase, Autobench was also referred to by the project names "TaistBench" and "ChatBench". That is why you will see the file name ChatbenchRunInfo.
 
 ## License
 
