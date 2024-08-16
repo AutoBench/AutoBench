@@ -88,7 +88,7 @@ For other configuration items, please see [default.yaml](config/default.yaml). I
 
 - This version of AutoBench is the first public version after paper acceptation.
 
-- The circuit_type file in data/HDLBits is only for reference. In AutoBench workflow, the circuit type of each task is discriminated in Stage 0.
+- The circuit_type file in data/HDLBits is only for reference but not used in our work. In AutoBench workflow, the circuit type of each task is discriminated in Stage 0.
 
 - During its development phase, Autobench was also referred to by the project names "TaistBench" and "ChatBench".
 
