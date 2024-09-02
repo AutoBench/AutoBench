@@ -1,0 +1,12 @@
+iverilog simulation failed!
+
+iverilog cmd 1:
+~/bin/bin/iverilog -g2012 -o run.vvp conditional_tb.v conditional.v 
+iverilog cmd 1 output:
+
+iverilog cmd 1 error:
+conditional.v:13: syntax error
+conditional.v:13: Syntax in assignment statement l-value.
+conditional.v:13: syntax error
+I give up.
+

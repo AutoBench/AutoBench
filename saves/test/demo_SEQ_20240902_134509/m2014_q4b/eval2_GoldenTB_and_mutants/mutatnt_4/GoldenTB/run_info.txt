@@ -1,0 +1,21 @@
+iverilog simulation passed!
+
+iverilog cmd 1:
+~/bin/bin/iverilog -g2012 -o run.vvp m2014_q4b_tb.v m2014_q4b.v 
+iverilog cmd 1 output:
+
+iverilog cmd 1 error:
+
+iverilog cmd 2:
+~/bin/bin/vvp run.vvp
+iverilog cmd 2 output:
+VCD info: dumpfile wave.vcd opened for output.
+m2014_q4b_tb.v:31: $finish called at 501 (1ps)
+Hint: Output 'q' has 37 mismatches. First mismatch occurred at time 45.
+Hint: Total mismatched samples is 37 out of 100 samples
+
+Simulation finished at 501 ps
+Mismatches: 37 in 100 samples
+
+iverilog cmd 2 error:
+

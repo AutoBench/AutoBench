@@ -1,0 +1,25 @@
+{
+    "task_id": "m2014_q4b",
+    "task_number": 72,
+    "time": 148.32,
+    "prompt_tokens": 7092,
+    "completion_tokens": 4427,
+    "ERROR(incomplete)": false,
+    "circuit_type": "SEQ",
+    "checklist_worked": false,
+    "Eval0_pass": true,
+    "Eval0_iv_pass": true,
+    "debug_iter_iv": 0,
+    "iv_runing_time": 0.1,
+    "Eval0_py_pass": true,
+    "debug_iter_py": 0,
+    "py_runing_time": 0.13,
+    "Eval1_pass": true,
+    "Eval2_pass": false,
+    "Eval2_ratio": "8/10",
+    "Eval2_failed_mutant_idxes": [
+        4,
+        5
+    ],
+    "full_pass": false
+}

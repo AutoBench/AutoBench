@@ -1,0 +1,41 @@
+############################## conversation begin ##############################
+########## system ##########
+You are the strongest AI in the world. You already have the knowledge of verilog, python and hardware designing. Do not save words by discarding information. I will tip you 200$ if you can fullfill the tasks I give you.
+
+########## user ##########
+Please generate the verilog RTL code according to the following description and header information:
+problem description:
+Implement a D flip flop, positive edge triggered, with an asynchronous reset "ar".
+RTL header:
+module top_module (
+	input clk,
+	input d,
+	input ar,
+	output logic q
+);
+
+please only reply verilog codes. reply_format:
+```verilog
+your_code_here...
+```
+
+
+########## assistant ##########
+```verilog
+module top_module (
+    input clk,
+    input d,
+    input ar,
+    output logic q
+);
+
+always @(posedge clk or posedge ar) begin
+    if (ar)
+        q <= 1'b0;
+    else
+        q <= d;
+end
+
+endmodule
+```
+

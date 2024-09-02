@@ -8,6 +8,8 @@ This is the code implementation of paper [*AutoBench: Automatic Testbench Genera
 
 - Updated on 15.Aug.2024: This open source work is honored to be **nominated** for the **Best Artifact Award** 😃. One reviewer successfully reproduced our work and achieved **even better** results than reported in the paper.
 
+- Updated on 2.Sep.2024: two demos are added into [saves/test](saves/test). By checking it, you can better understand the whole process of AutoBench without running it by your self.
+
 This open-sourced project contains the `code implementation` of *AutoBench*, the `dataset` (see json files in [`data/HDLBits`](data/HDLBits), the dataset is extended from HDLBits data) and the `experimental results` (see the following google drive link) referred in paper Section V Experimental results. Due to the large size, the experimental results are uploaded to [google drive](https://drive.google.com/drive/folders/1EhG9Ch4vDzMtOsDvoiHthU0OWsZP1xRh?usp=sharing).
 
 
@@ -69,6 +71,8 @@ We provided 4 demos for a quick start, you can access them via args:
 - single task demo for SEQ circuits: `python main.py -d seq`
 - full task demo for all circuits: `python main.py -d 156`
 - full task demo for all circuits using baseline (directgen): `python main.py -d baseline`
+
+We already run two demos in [saves/test](saves/test).
 
 ### Run by customized configures
 

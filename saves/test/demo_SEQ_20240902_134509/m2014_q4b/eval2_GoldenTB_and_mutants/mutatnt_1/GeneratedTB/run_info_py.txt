@@ -1,0 +1,64 @@
+python compilation passed!
+
+###output:
+Scenario: 1, expected: q=0, observed q=1
+Failed; vector: {'check_en': True, 'scenario': '1', 'clk': 1, 'd': 0, 'ar': 1, 'q': 1}
+Scenario: 1, expected: q=0, observed q=1
+Failed; vector: {'check_en': True, 'scenario': '1', 'clk': 1, 'd': 0, 'ar': 1, 'q': 1}
+Scenario: 1, expected: q=0, observed q=1
+Failed; vector: {'check_en': True, 'scenario': '1', 'clk': 1, 'd': 0, 'ar': 1, 'q': 1}
+Scenario: 1, expected: q=0, observed q=1
+Failed; vector: {'check_en': True, 'scenario': '1', 'clk': 1, 'd': 0, 'ar': 1, 'q': 1}
+Scenario: 1, expected: q=0, observed q=1
+Failed; vector: {'check_en': True, 'scenario': '1', 'clk': 1, 'd': 0, 'ar': 1, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '1', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '1', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '1', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '1', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '1', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '2', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '2', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '2', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '2', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '2', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '3', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Scenario: 3, expected: q=0, observed q=1
+Failed; vector: {'check_en': True, 'scenario': '3', 'clk': 1, 'd': 1, 'ar': 1, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '3', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '3', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '3', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '4', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '4', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '4', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '4', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '4', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '4', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '4', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '4', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '4', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '4', 'clk': 1, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '5', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '5', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '5', 'clk': 1, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '5', 'clk': 0, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '5', 'clk': 0, 'd': 1, 'ar': 0, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '5', 'clk': 0, 'd': 1, 'ar': 0, 'q': 1}
+Scenario: 6, expected: q=0, observed q=1
+Failed; vector: {'check_en': True, 'scenario': '6', 'clk': 0, 'd': 1, 'ar': 1, 'q': 1}
+Scenario: 6, expected: q=0, observed q=1
+Failed; vector: {'check_en': True, 'scenario': '6', 'clk': 0, 'd': 1, 'ar': 1, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '6', 'clk': 0, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '6', 'clk': 0, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '6', 'clk': 0, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '6', 'clk': 0, 'd': 0, 'ar': 0, 'q': 0}
+Scenario: 7, expected: q=0, observed q=1
+Failed; vector: {'check_en': True, 'scenario': '7', 'clk': 0, 'd': 0, 'ar': 1, 'q': 1}
+Passed; vector: {'check_en': True, 'scenario': '7', 'clk': 0, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '7', 'clk': 0, 'd': 0, 'ar': 0, 'q': 0}
+Passed; vector: {'check_en': True, 'scenario': '7', 'clk': 0, 'd': 0, 'ar': 0, 'q': 0}
+['1', '1', '1', '1', '1', '3', '6', '6', '7']
+
+
+###error:
+
+

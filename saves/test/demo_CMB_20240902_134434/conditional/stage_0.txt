@@ -1,0 +1,43 @@
+############################## conversation begin ##############################
+########## system ##########
+You are the strongest AI in the world. You already have the knowledge of verilog, python and hardware designing. Do not save words by discarding information. I will tip you 200$ if you can fullfill the tasks I give you.
+
+########## user ##########
+Please generate the verilog RTL code according to the following description and header information:
+problem description:
+Given four unsigned numbers, find the minimum. Unsigned numbers can be compared with standard comparison operators (a < b). 
+RTL header:
+module top_module (
+	input [7:0] a,
+	input [7:0] b,
+	input [7:0] c,
+	input [7:0] d,
+	output reg [7:0] min
+);
+
+please only reply verilog codes. reply_format:
+```verilog
+your_code_here...
+```
+
+
+########## assistant ##########
+```verilog
+module top_module (
+    input [7:0] a,
+    input [7:0] b,
+    input [7:0] c,
+    input [7:0] d,
+    output reg [7:0] min
+);
+
+    always @* begin
+        if (a <= b && a <= c && a <= d) min = a;
+        else if (b <= c && b <= d) min = b;
+        else if (c <= d) min = c;
+        else min = d;
+    end
+
+endmodule
+```
+

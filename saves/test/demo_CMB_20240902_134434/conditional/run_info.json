@@ -1,0 +1,24 @@
+{
+    "task_id": "conditional",
+    "task_number": 115,
+    "time": 86.45,
+    "prompt_tokens": 6866,
+    "completion_tokens": 2579,
+    "ERROR(incomplete)": false,
+    "circuit_type": "CMB",
+    "checklist_worked": false,
+    "Eval0_pass": true,
+    "Eval0_iv_pass": true,
+    "debug_iter_iv": 0,
+    "iv_runing_time": 0.25,
+    "Eval0_py_pass": true,
+    "debug_iter_py": 0,
+    "py_runing_time": 0.12,
+    "Eval1_pass": true,
+    "Eval2_pass": false,
+    "Eval2_ratio": "9/10",
+    "Eval2_failed_mutant_idxes": [
+        5
+    ],
+    "full_pass": false
+}

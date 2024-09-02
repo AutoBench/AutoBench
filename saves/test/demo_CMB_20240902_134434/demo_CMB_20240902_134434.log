@@ -1,0 +1,202 @@
+
+---------------custom config--------------
+run: 
+    mode: autoline
+save: 
+    en: True
+    pub: 
+        prefix: demo_CMB
+        subdir: test
+gpt: 
+    model: 4t
+    key_path: config/ruidi_key_API.json
+autoline: 
+    probset: 
+        path: data/HDLBits/HDLBits_data.jsonl
+        mutant_path: data/HDLBits/HDLBits_data_mutants.jsonl
+        only: ['conditional']
+    promptscript: pychecker
+    timeout: 40
+------------------------------------------
+------config info (custom + default)------
+run: 
+    version: 5.0
+    author: Ruidi Qiu - Technical University of Munich
+    time: 20240902_134434
+    custom_path: config/demos/CMB_template.yaml
+    mode: autoline
+    hostname: gpu19
+    pid: 1947168
+save: 
+    en: True
+    root: saves/test/demo_CMB_20240902_134434/
+    pub: 
+        prefix: demo_CMB
+        dir: saves/
+        subdir: test/
+    log: 
+        en: True
+        dir: logs/
+        notes: None
+        cfg_pmode: iwantall
+    message: 
+        en: True
+        dir: messages/
+        format: json
+    iverilog: 
+        en: True
+        subdir: ivcode_nodebug
+load: 
+    prompt: 
+        path: config/initial_prompts/prompt1.txt
+        pick_idx: []
+    stage_template: 
+        path: config/templates/stage_template0301.txt
+gpt: 
+    model: gpt-4-turbo-2024-04-09
+    key_path: config/ruidi_key_API.json
+    temperature: None
+    json_mode: False
+    chatgpt: 
+        start_form: chat
+        one_time_talk: False
+iverilog: 
+    dir: 
+    task_id: 
+autoline: 
+    probset: 
+        path: data/HDLBits/HDLBits_data.jsonl
+        mutant_path: data/HDLBits/HDLBits_data_mutants.jsonl
+        gptgenRTL_path: None
+        more_info_paths: []
+        only: ['conditional']
+        exclude: []
+        exclude_json: None
+        filter: [{}]
+    checklist: 
+        max: 3
+    debug: 
+        max: 5
+        reboot: 1
+        py_rollback: 2
+    onlyrun: None
+    promptscript: pychecker
+    error_interruption: False
+    timeout: 40
+    save_compile: True
+------------------------------------------
+
+--------------default config--------------
+run: 
+    version: 5.0
+    author: Ruidi Qiu - Technical University of Munich
+    time: None
+    custom_path: None
+    mode: chatgpt
+save: 
+    en: True
+    root: None
+    pub: 
+        prefix: None
+        dir: saves/
+        subdir: 
+    log: 
+        en: True
+        dir: logs/
+        notes: None
+        cfg_pmode: iwantall
+    message: 
+        en: True
+        dir: messages/
+        format: json
+    iverilog: 
+        en: True
+        subdir: ivcode_nodebug
+load: 
+    prompt: 
+        path: config/initial_prompts/prompt1.txt
+        pick_idx: []
+    stage_template: 
+        path: config/templates/stage_template0301.txt
+gpt: 
+    model: 4
+    key_path: config/key_API.json
+    temperature: None
+    json_mode: False
+    chatgpt: 
+        start_form: chat
+        one_time_talk: False
+iverilog: 
+    dir: 
+    task_id: 
+autoline: 
+    probset: 
+        path: None
+        mutant_path: None
+        gptgenRTL_path: None
+        more_info_paths: []
+        only: []
+        exclude: []
+        exclude_json: None
+        filter: [{}]
+    checklist: 
+        max: 3
+    debug: 
+        max: 5
+        reboot: 1
+        py_rollback: 2
+    onlyrun: None
+    promptscript: None
+    error_interruption: False
+    timeout: 60
+    save_compile: True
+------------------------------------------
+
+#################### task 1/1 [conditional] ####################
+stage_0 ends (4.93s used, time: 13:44:39 2024-09-02)
+stage_1 ends (9.38s used, time: 13:44:48 2024-09-02)
+stage_2 ends (12.10s used, time: 13:45:00 2024-09-02)
+stage_3 ends (16.74s used, time: 13:45:17 2024-09-02)
+stage_4 ends (28.64s used, time: 13:45:46 2024-09-02)
+stage_checklist ends (1.16s used, time: 13:45:47 2024-09-02)
+stage_5 ends (10.80s used, time: 13:45:58 2024-09-02)
+[conditional] iverilog compilation : passed! (13:45:58 2024-09-02)
+[conditional] python simulation : passed! (13:45:58 2024-09-02)
+[conditional] TBsim finished : True! (13:45:58 2024-09-02)
+
+[conditional] Eval 1: Golden RTL checking begins
+[conditional] Eval 1: Golden RTL checking passed! (13:45:58 2024-09-02)
+[conditional] Eval 2: Golden TB checking on RTL mutants
+[conditional] Eval 2: Golden TB checking on RTL mutants finished (9/10)! (13:46:00 2024-09-02)
+
+########## Analyze of Chatbench_RunInfo ##########
+
+#### pass numbers:
+Eval2 : 1
+Eval1 : 1
+Eval0 : 1
+total : 1 (Failed: 0)
+
+#### tokens and cost:
+average prompt tokens: 6866
+average completion tokens: 2579
+total cost: 0.1460
+average cost: 0.1460
+
+#### time:
+average time: 86.45s
+
+#### debug info table:
+debug info table:
+         | un-debugged | debugged | total |
+failed   |           0 |        0 |     0 |
+Eval0    |           1 |        0 |     1 |
+Eval1    |           1 |        0 |     1 |
+Eval2    |           1 |        0 |     1 |
+
+#### Eval2 ratio:
+conditional: 9/10
+
+loose Eval2 pass metric applied: R = 0.80
+
+

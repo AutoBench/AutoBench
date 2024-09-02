@@ -1,0 +1,21 @@
+iverilog simulation passed!
+
+iverilog cmd 1:
+~/bin/bin/iverilog -g2012 -o run.vvp conditional_tb.v conditional.v 
+iverilog cmd 1 output:
+
+iverilog cmd 1 error:
+
+iverilog cmd 2:
+~/bin/bin/vvp run.vvp
+iverilog cmd 2 output:
+VCD info: dumpfile wave.vcd opened for output.
+conditional_tb.v:54: $finish called at 560 (1ps)
+Hint: Output 'min' has no mismatches.
+Hint: Total mismatched samples is 0 out of 112 samples
+
+Simulation finished at 560 ps
+Mismatches: 0 in 112 samples
+
+iverilog cmd 2 error:
+

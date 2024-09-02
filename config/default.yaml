@@ -12,7 +12,7 @@ save:
     root: ~ # the root saving dir ends with '/'; will be set in program. 
     pub:
         prefix: # the real name of one experiment, fill it in custom_path;
-        dir: 'saves/0812~0818/' # Ended with '/'; if not empty, log/tb/data will share one dir, recommended.
+        dir: 'saves/' # Ended with '/'; if not empty, log/tb/data will share one dir, recommended.
         subdir: ''
 
     log:
