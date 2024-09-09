@@ -4,7 +4,7 @@
 
 <img src="https://mlcad.org/symposium/wp-content/uploads/2022/03/cropped-gjruy0zw-237x114-1-1.png" width="20%" align=right><img src="figs/artifacts_evaluated_functional_v1.1.svg" width="10%" align=right><img src="figs/artifacts_available_v1.1.svg" width="10%" align=right>
 
-This is the code implementation of paper [*AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design*](https://arxiv.org/abs/2407.03891), which has been **accepted** by [*6th ACM/IEEE International Symposium on Machine Learning for CAD*](https://mlcad.org/symposium/). 
+This is the code implementation of paper [*AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design*](https://dl.acm.org/doi/10.1145/3670474.3685956), which has been **accepted** by [*6th ACM/IEEE International Symposium on Machine Learning for CAD*](https://mlcad.org/symposium/). 
 
 - Updated on 15.Aug.2024: This open source work is honored to be **nominated** for the **Best Artifact Award** 😃. One reviewer successfully reproduced our work and achieved **even better** results than reported in the paper.
 
@@ -109,13 +109,20 @@ This project is licensed under the GNU General Public License (GPL), a free soft
 ## Reference
 
 ```
-@misc{qiu2024autobenchautomatictestbenchgeneration,
-      title={AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design}, 
-      author={Ruidi Qiu and Grace Li Zhang and Rolf Drechsler and Ulf Schlichtmann and Bing Li},
-      year={2024},
-      eprint={2407.03891},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE},
-      url={https://arxiv.org/abs/2407.03891}, 
+@inproceedings{10.1145/3670474.3685956,
+author = {Qiu, Ruidi and Zhang, Grace Li and Drechsler, Rolf and Schlichtmann, Ulf and Li, Bing},
+title = {{AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design}},
+year = {2024},
+isbn = {9798400706998},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3670474.3685956},
+doi = {10.1145/3670474.3685956},
+booktitle = {Proceedings of the 2024 ACM/IEEE International Symposium on Machine Learning for CAD},
+articleno = {18},
+numpages = {10},
+keywords = {Hardware Simulation, Large Language Model, Testbench Generation},
+location = {Salt Lake City, UT, USA},
+series = {MLCAD '24}
 }
 ```
