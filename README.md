@@ -10,6 +10,8 @@ This is the code implementation of paper [*AutoBench: Automatic Testbench Genera
 
 - Updated on 2.Sep.2024: two demos are added into [saves/test](saves/test). By checking it, you can better understand the whole process of AutoBench without running it by your self.
 
+- Updated on 9.Sep.2024: Our work is finally awareded with the **Best Artifact award** during MLCAD 2024😃😃.
+
 This open-sourced project contains the `code implementation` of *AutoBench*, the `dataset` (see json files in [`data/HDLBits`](data/HDLBits), the dataset is extended from HDLBits data) and the `experimental results` (see the following google drive link) referred in paper Section V Experimental results. Due to the large size, the experimental results are uploaded to [google drive](https://drive.google.com/drive/folders/1EhG9Ch4vDzMtOsDvoiHthU0OWsZP1xRh?usp=sharing).
 
 
