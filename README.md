@@ -4,7 +4,9 @@
 
 <img src="https://mlcad.org/symposium/wp-content/uploads/2022/03/cropped-gjruy0zw-237x114-1-1.png" width="20%" align=right><img src="figs/artifacts_evaluated_functional_v1.1.svg" width="10%" align=right><img src="figs/artifacts_available_v1.1.svg" width="10%" align=right>
 
-This is the code implementation of paper [*AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design*](https://dl.acm.org/doi/10.1145/3670474.3685956), which has been **accepted** by [*6th ACM/IEEE International Symposium on Machine Learning for CAD*](https://mlcad.org/symposium/). 
+This is the code implementation of paper [*AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design*](https://dl.acm.org/doi/10.1145/3670474.3685956), which has been **accepted** by [*6th ACM/IEEE International Symposium on Machine Learning for CAD*](https://mlcad.org/symposium/).
+
+- Updated on 13.Nov.2024: Our new work, `CorrectBench`, the next generation of AutoBench, has been **accepted by DATE 2025** as regular paper😃. See [`CorrectBench`](https://github.com/AutoBench/CorrectBench) for more information. CorrectBench is seen as AutoBench 2.0, which fixes some bugs of AutoBench and add more features such as self-validation and self-correction. It improved the generated testbench pass ratio to 70.13%, compared with AutoBench’s 52.18% and baseline’s 33.33% on gpt-4o.
 
 - Updated on 9.Sep.2024: Our work is finally awareded with the **Best Artifact award** during MLCAD 2024😃😃.
 
@@ -64,6 +66,8 @@ If your CPU is heavily occupied or very inefficient, consider enlarging the valu
 ## Running
 
 This project's config is stored in YAML files under [`/config`](config). You have multiple options to run this project.
+
+- Updated on 13.Nov.2024: now we strongly recommend you to use our latest code in [CorrectBench](https://github.com/AutoBench/CorrectBench) since it fixes some bugs of AutoBench and provides more new features.
 
 ### Run by preset configs
 
