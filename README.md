@@ -2,11 +2,15 @@
 
 ![image](https://zenodo.org/badge/809137959.svg) ![image](https://img.shields.io/github/license/AutoBench/AutoBench.svg) ![image](https://img.shields.io/github/release/AutoBench/AutoBench)
 
+## Latest News 💥
+
+Our new work, `CorrectBench`, the next generation of AutoBench, has been **accepted by DATE 2025** as regular paper😃. See [`CorrectBench`](https://github.com/AutoBench/CorrectBench) for more information. CorrectBench is seen as AutoBench 2.0, which fixes some bugs of AutoBench and add more features such as self-validation and self-correction. It improved the generated testbench pass ratio to 70.13%, compared with AutoBench’s 52.18% and baseline’s 33.33% on gpt-4o.
+
+## Overview
+
 <img src="https://mlcad.org/symposium/wp-content/uploads/2022/03/cropped-gjruy0zw-237x114-1-1.png" width="20%" align=right><img src="figs/artifacts_evaluated_functional_v1.1.svg" width="10%" align=right><img src="figs/artifacts_available_v1.1.svg" width="10%" align=right>
 
 This is the code implementation of paper [*AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design*](https://dl.acm.org/doi/10.1145/3670474.3685956), which has been **accepted** by [*6th ACM/IEEE International Symposium on Machine Learning for CAD*](https://mlcad.org/symposium/).
-
-- Updated on 13.Nov.2024: Our new work, `CorrectBench`, the next generation of AutoBench, has been **accepted by DATE 2025** as regular paper😃. See [`CorrectBench`](https://github.com/AutoBench/CorrectBench) for more information. CorrectBench is seen as AutoBench 2.0, which fixes some bugs of AutoBench and add more features such as self-validation and self-correction. It improved the generated testbench pass ratio to 70.13%, compared with AutoBench’s 52.18% and baseline’s 33.33% on gpt-4o.
 
 - Updated on 9.Sep.2024: Our work is finally awareded with the **Best Artifact award** during MLCAD 2024😃😃.
 
@@ -19,6 +23,9 @@ This open-sourced project contains the `code implementation` of *AutoBench*, the
 
 ![image](figs/Workflow_Detailed_Generation.png)
 
+## What is AutoBench
+AutoBench is the first **LLM-based testbench generator** for digital circuit design, which requires only the description of the design under test (DUT) to automatically generate comprehensive testbenches. In AutoBench, a hybrid testbench structure and a self-checking system are realized using LLMs. To validate the generated testbenches, we also introduce an automated testbench evaluation framework (Eval0, Eval1, Eval2, Eval2b) to evaluate the quality of generated testbenches from multiple perspectives.
+
 ## Authors
 
  - [Ruidi **Qiu**](https://www.ce.cit.tum.de/eda/personen/ruidi-qiu/), Technical University of Munich, r.qiu@tum.de 
@@ -26,9 +33,6 @@ This open-sourced project contains the `code implementation` of *AutoBench*, the
  - [Rolf **Drechsler**](https://www.rolfdrechsler.de/), University of Bremen, drechsler@uni-bremen.de
  - [Ulf **Schlichtmann**](https://www.ce.cit.tum.de/eda/personen/ulf-schlichtmann/), Technical University of Munich, ulf.schlichtmann@tum.de
  - [Bing **Li**](https://www.eti.uni-siegen.de/dis/mitarbeiter), University of Siegen, bing.li@uni-siegen.de
-
-## What is AutoBench
-AutoBench is the first **LLM-based testbench generator** for digital circuit design, which requires only the description of the design under test (DUT) to automatically generate comprehensive testbenches. In AutoBench, a hybrid testbench structure and a self-checking system are realized using LLMs. To validate the generated testbenches, we also introduce an automated testbench evaluation framework (Eval0, Eval1, Eval2, Eval2b) to evaluate the quality of generated testbenches from multiple perspectives.
 
 ## Setup
 
