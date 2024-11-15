@@ -8,7 +8,7 @@ Our new work, `CorrectBench`, the next generation of AutoBench, has been **accep
 
 ## Overview
 
-<img src="https://mlcad.org/symposium/wp-content/uploads/2022/03/cropped-gjruy0zw-237x114-1-1.png" width="20%" align=right><img src="figs/artifacts_evaluated_functional_v1.1.svg" width="10%" align=right><img src="figs/artifacts_available_v1.1.svg" width="10%" align=right>
+<img src="figs/mlcad_logo.png" width="20%" align=right><img src="figs/artifacts_evaluated_functional_v1.1.svg" width="10%" align=right><img src="figs/artifacts_available_v1.1.svg" width="10%" align=right>
 
 This is the code implementation of paper [*AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design*](https://dl.acm.org/doi/10.1145/3670474.3685956), which has been **accepted** by [*6th ACM/IEEE International Symposium on Machine Learning for CAD*](https://mlcad.org/symposium/).
 
