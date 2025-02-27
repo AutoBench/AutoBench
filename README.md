@@ -4,7 +4,7 @@
 
 ## Latest News 💥
 
-Our new work, `CorrectBench`, the next generation of AutoBench, has been **accepted by DATE 2025** as regular paper😃. See [`CorrectBench`](https://github.com/AutoBench/CorrectBench) for more information. CorrectBench is seen as AutoBench 2.0, which fixes some bugs of AutoBench and add more features such as self-validation and self-correction. It improved the generated testbench pass ratio to 70.13%, compared with AutoBench’s 52.18% and baseline’s 33.33% on gpt-4o.
+Our new work, `CorrectBench`, the next generation of AutoBench, has been **accepted by DATE 2025** as regular paper😃. See [`CorrectBench(code)`](https://github.com/AutoBench/CorrectBench) and [`CorrectBench(paper)`](https://arxiv.org/abs/2411.08510) for more information. CorrectBench is seen as AutoBench 2.0, which fixes some bugs of AutoBench and add more features such as self-validation and self-correction. It improved the generated testbench pass ratio to 70.13%, compared with AutoBench’s 52.18% and baseline’s 33.33% on gpt-4o.
 
 ## Overview
 
