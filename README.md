@@ -112,7 +112,7 @@ For other configuration items, please see [default.yaml](config/default.yaml). I
 
 ## License
 
-This project is licensed under the GNU General Public License (GPL), a free software license that aims to protect user freedoms. Under the GPL, you are free to use, modify, and distribute this software, but you must share any modifications under the same license.
+This project is licensed under the MIT license. Feel free to clone, fork and cite our work!
 
 ## Reference
 
